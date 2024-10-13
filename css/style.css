@@ -319,9 +319,14 @@ hr {
 }
 /* End Footer */
 /* Start Media Query */
-@media (max-width: 991px) {
+@media (max-width: 992px) {
+  :root {
+    overflow-x: hidden;
+  }
   .nav-shadow {
-    width: 100% !important
+    max-width: 100% !important;
+    margin-top: -1px;
+    margin-left: -1px;
   }
   .nav-shadow .logo {
     margin-left: 0px;
@@ -349,34 +354,38 @@ hr {
     gap: 50px;
   }
   .background {
-   background-attachment: fixed;
+    background-attachment: fixed;
+    width: 109%;
+  }
+  .about-opacity {
+    margin-left: 50px;
   }
   .about-info {
-    width: 50px;
-    margin: auto;
+    width: 100%;
+  }
+  .photo-about img {
+    width: 450px !important;
   }
   hr {
     width: 300px !important;
   }
-  .photo-about img {
-    width: 400px !important;
+  .Companies-opacity {
+    margin-left: 10px;
   }
   .card {
-    width: 21rem !important;
+    width: 24rem !important;
   }
   .testanimation {
-    margin: auto;
+    margin: 5px auto;
   }
   .card .card-body {
     text-align: center;
   }
   .products-opacity {
-    margin-top: 120px;
+    margin: 120px auto;
   }
   .products {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    gap: 10px;
   }
   .product img {
     width: 150px;
@@ -386,13 +395,19 @@ hr {
   }
   .biscuits .info-photo h4 {
     text-align: center;
+    margin: auto;
   }
   .biscuits .info-photo p {
     text-align: center;
-    margin: 0 auto 20px;
+  }
+  .or {
+    width: 350px !important;
+    display: block;
+    margin: auto;
   }
   .biscuits .biscuits-photo {
     width: 400px;
+    /* margin-left: 20px; */
   }
 }
 /* End Media Query */
