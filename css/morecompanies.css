@@ -14,8 +14,8 @@ body {
 /* End Rules */
 /* Start Navbar */
 .nav-shadow {
-/* position: fixed; */
-  z-index: 10000000;
+position: sticky;
+  z-index: 10000000000;
   box-shadow: 0 6px 10px -8px;
   width: 100% !important;
   height: 80px;
@@ -186,7 +186,16 @@ body {
 }
 /* End Footer */
 /* Start Media Query */
-@media (max-width: 991px) {
+@media (max-width: 992px) {
+  :root {
+    overflow-x: hidden;
+  }
+  .nav-shadow {
+    max-width: 100% !important;
+    position: fixed;
+    z-index: 1000000000000;
+    margin: -1px;
+  }
   .nav-shadow .logo {
     margin-left: 0px;
   }
@@ -212,16 +221,20 @@ body {
   .off-contact {
     gap: 50px;
   }
-  .card {
-    width: 100% !important;
+  .card-container {
+    gap: 0;
+    margin-top: 80px !important;
+  }
+    .testanimation {
+    margin: 20px auto;
+    width: 100%;
+  }
+ .card {
+    width: 16rem !important;
+    margin: auto;
   }
   .card .card-body {
     text-align: center;
-    width: 400px;
     margin: auto;
-    padding-bottom: 30px;
-  }
-  .testanimation:hover {
-    transform: none;
   }
   /* End Media Query */
