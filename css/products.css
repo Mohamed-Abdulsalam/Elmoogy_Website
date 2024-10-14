@@ -14,7 +14,7 @@ body {
 /* End Rules */
 /* Start Navbar */
 .nav-shadow {
-  /* position: fixed; */
+  position: sticky;
   z-index: 10000000;
   box-shadow: 0 6px 10px -8px;
   width: 100% !important;
@@ -98,32 +98,32 @@ body {
 /* End Off Canvas */
 /* Start Company information */
 .logo-company img {
-    width: 200px;
-    margin: 50px auto;
-    border: 1px solid #ddd;
-    border-radius: 22px;
-    display: block;
+  width: 200px;
+  margin: 50px auto;
+  border: 1px solid #ddd;
+  border-radius: 22px;
+  display: block;
 }
 .info-company {
-    width: 400px;
-    margin: auto;
-    text-align: center;
+  width: 400px;
+  margin: auto;
+  text-align: center;
 }
 /* End Company information */
 /* Start Products */
 .products {
-    width: 58%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    margin: 80px auto;
-    border: 1px solid #ddd;
-    border-radius: 22px;
+  width: 58%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 80px auto;
+  border: 1px solid #ddd;
+  border-radius: 22px;
 }
 .product {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 .products img {
   width: 180px;
@@ -203,6 +203,15 @@ body {
 /* End Footer */
 /* Start Media Query */
 @media (max-width: 991px) {
+  :root {
+    overflow-x: hidden;
+  }
+  .nav-shadow {
+    max-width: 100% !important;
+    position: fixed;
+    z-index: 1000000000000;
+    margin: -1px;
+  }
   .nav-shadow .logo {
     margin-left: 0px;
   }
@@ -228,4 +237,16 @@ body {
   .off-contact {
     gap: 50px;
   }
-  /* End Media Query */
+  .logo-company {
+    margin: 100px auto 0 !important;
+  }
+  .info-company {
+    width: 200px;
+  }
+  .products {
+    width: 80%;
+    margin-top: 45px;
+    gap: 0px;
+  }
+}
+/* End Media Query */
