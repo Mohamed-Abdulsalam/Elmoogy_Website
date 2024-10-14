@@ -221,6 +221,9 @@ position: sticky;
   .off-contact {
     gap: 50px;
   }
+   .off-contact .add p {
+    width: auto;
+  }
   .card-container {
     gap: 0;
     margin-top: 80px !important;

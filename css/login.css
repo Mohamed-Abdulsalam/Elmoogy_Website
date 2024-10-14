@@ -71,7 +71,11 @@ body {
 /* Start Media Query */
 @media (max-width: 768px) {
   .log-in {
-    margin-top: 40%;
+    margin: 30% auto;
+    width: 90%;
+  }
+  .log-in form input {
+    width: 250px;
   }
 }
 /* End Media Query */
