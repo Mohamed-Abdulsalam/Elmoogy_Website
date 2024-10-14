@@ -364,7 +364,10 @@ hr {
     width: 100%;
   }
   .photo-about img {
-    width: 450px !important;
+    width: 350px !important;
+  }
+  .paragraph {
+    width: 300px !important;
   }
   hr {
     width: 300px !important;
@@ -373,7 +376,7 @@ hr {
     margin-left: 10px;
   }
   .card {
-    width: 24rem !important;
+    width: 20rem !important;
   }
   .testanimation {
     margin: 5px auto;
@@ -382,7 +385,7 @@ hr {
     text-align: center;
   }
   .products-opacity {
-    margin: 120px auto;
+    margin: 120px 36px;
   }
   .products {
     gap: 10px;
@@ -399,15 +402,16 @@ hr {
   }
   .biscuits .info-photo p {
     text-align: center;
+    width: 300px;
+    margin: auto;
   }
   .or {
     width: 350px !important;
     display: block;
-    margin: auto;
+    margin: 20px auto;
   }
   .biscuits .biscuits-photo {
-    width: 400px;
-    /* margin-left: 20px; */
+    width: 330px;
   }
 }
 /* End Media Query */
