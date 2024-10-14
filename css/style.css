@@ -353,6 +353,9 @@ hr {
   .off-contact {
     gap: 50px;
   }
+  .off-contact .add p {
+    width: auto;
+  }
   .background {
     background-attachment: fixed;
     width: 109%;
